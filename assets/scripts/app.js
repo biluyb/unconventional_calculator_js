@@ -43,10 +43,3 @@ addBtn.addEventListener('click', add)
 subBtn.addEventListener('click', sub)
 multiplyBtn.addEventListener('click', mul)
 divisionBtn.addEventListener('click', div)
-
-
-
-
-
-
-
