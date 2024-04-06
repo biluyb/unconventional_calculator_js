@@ -1,25 +1,153 @@
-.calculator {
-    width: 200px;
-    margin: 0 auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+body {
+    font-family: sans-serif;
+    /* Set a basic font style */
+    margin: 0;
+    /* Remove default margin from the body */
+    padding: 0;
+    /* Remove default padding from the body */
+    padding-top: 50px;
+        /* Add some padding at the top */
+}
+.calculator-header {
     text-align: center;
+    /* Center the header content */
+    font-size: 24px;
+    /* Set a larger font size for the header */
+    margin-bottom: 20px;
+    /* Add some space below the header */
+    color: rgba(10, 111, 111, 0.801);
+    body {
+    font-family: sans-serif;
+    /* Set a basic font style */
+    margin: 0;
+    /* Remove default margin from the body */
+    padding: 0;
+    /* Remove default padding from the body */
+    padding-top: 50px;
+        /* Add some padding at the top */
+}
+.calculator-header {
+    text-align: center;
+    /* Center the header content */
+    font-size: 24px;
+    /* Set a larger font size for the header */
+    margin-bottom: 20px;
+    /* Add some space below the header */
+}
+section {
+    display: flex;
+    /* Arrange sections side-by-side */
+    justify-content: space-between;
+    /* Space sections evenly */
+    align-items: center;
+    /* Align content vertically within sections */
+    margin: 20px auto;
+    /* Add some margin for better spacing */
+    width: 300px;
+    /* Set a fixed width for the calculator */
+    border: 1px solid #ddd;
+    /* Add a thin border */
+    border-radius: 5px;
+    /* Add rounded corners */
+    padding: 10px;
+    /* Add some padding inside the sections */
 }
 
-#display {
+#input-number {
     width: 100%;
-    margin-bottom: 10px;
-    padding: 5px;
-}
-
-.buttons {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 5px;
+    /* Make the input field fill the section */
+    padding: 10px;
+    /* Add padding for better user experience */
+    border: 1px solid #ccc;
+    /* Add a border to the input field */
+    border-radius: 3px;
+    /* Add rounded corners to the input field */
+    font-size: 16px;
+    /* Set a readable font size */
 }
 
 button {
-    padding: 10px;
+    margin: 5px;
+    /* Add spacing between buttons */
+    padding: 10px 15px;
+    /* Set button size and padding */
+    border: 1px solid #ccc;
+    /* Add a border to buttons */
+    border-radius: 3px;
+    /* Add rounded corners to buttons */
     font-size: 16px;
+    /* Set a readable font size for buttons */
+    cursor: pointer;
+    /* Indicate clickable behavior */
+}
+
+h2 {
+    margin: 0;
+    /* Remove default margin from headings */
+    font-size: 18px;
+    /* Set a slightly larger font size for headings */
+}
+
+#current-result {
+    font-weight: bold;
+    /* Make the result text bold */
+}
+}
+section {
+    display: flex;
+    /* Arrange sections side-by-side */
+    justify-content: space-between;
+    /* Space sections evenly */
+    align-items: center;
+    /* Align content vertically within sections */
+    margin: 20px auto;
+    /* Add some margin for better spacing */
+    width: 300px;
+    /* Set a fixed width for the calculator */
+    border: 1px solid #ddd;
+    /* Add a thin border */
+    border-radius: 5px;
+    /* Add rounded corners */
+    padding: 10px;
+    /* Add some padding inside the sections */
+}
+
+#input-number {
+    width: 100%;
+    /* Make the input field fill the section */
+    padding: 10px;
+    /* Add padding for better user experience */
+    border: 1px solid #ccc;
+    /* Add a border to the input field */
+    border-radius: 3px;
+    /* Add rounded corners to the input field */
+    font-size: 16px;
+    /* Set a readable font size */
+}
+
+button {
+    margin: 5px;
+    /* Add spacing between buttons */
+    padding: 10px 15px;
+    /* Set button size and padding */
+    border: 1px solid #ccc;
+    /* Add a border to buttons */
+    border-radius: 3px;
+    /* Add rounded corners to buttons */
+    font-size: 16px;
+    /* Set a readable font size for buttons */
+    cursor: pointer;
+    /* Indicate clickable behavior */
+}
+
+h2 {
+    margin: 0;
+    /* Remove default margin from headings */
+    font-size: 18px;
+    /* Set a slightly larger font size for headings */
+}
+
+#current-result {
+    font-weight: bold;
+    /* Make the result text bold */
 }

@@ -1,17 +1,52 @@
-let display = document.getElementById('display');
+const defaultResult = 0;
+let currentResult = defaultResult;
 
-function appendValue(value) {
-  display.value += value;
+function getUserInput(){
+  return parseInt(userInput.value);
 }
 
-function clearDisplay() {
-  display.value = '';
+function writeOutput(operator,resultBefore,calcResult){
+    const resultDescription = `${resultBefore} ${operator} ${calcResult}`
+    outputResult(resultBefore, resultDescription)
 }
 
-function calculate() {
-  try {
-    display.value = eval(display.value);
-  } catch (error) {
-    display.value = 'Error';
-  }
+function add(){  
+  const enteredNumber =getUserInput();
+  const initCurrentResult= currentResult
+  currentResult += enteredNumber;
+  writeOutput("+",initCurrentResult,currentResult)
+
 }
+
+function sub(){  
+  const enteredNumber =getUserInput();
+  const initCurrentResult= currentResult
+  currentResult -= enteredNumber;
+  writeOutput("-",initCurrentResult,currentResult)
+}
+
+function mul(){  
+  const enteredNumber = getUserInput();
+  const initCurrentResult= currentResult
+  currentResult *= enteredNumber;
+  writeOutput("*",initCurrentResult,currentResult)
+}
+
+function div(){  
+  const enteredNumber =getUserInput();
+  const initCurrentResult= currentResult
+  currentResult /= enteredNumber;
+  writeOutput("/",initCurrentResult,currentResult)
+}
+
+addBtn.addEventListener('click', add)
+subBtn.addEventListener('click', sub)
+multiplyBtn.addEventListener('click', mul)
+divisionBtn.addEventListener('click', div)
+
+
+
+
+
+
+
